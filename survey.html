@@ -14,10 +14,10 @@
         .google-form-container {
             position: relative;
             width: 100%;
-            /* Visible window height (container is shorter than content, forcing scroll) */
-            height: 1000px; 
-            /* Scrollbar is now visible */
-            overflow-y: auto; 
+            /* Set height large enough to show full form, removing the need for a scrollbar */
+            height: 1700px; 
+            /* Hides any overflow, including the scrollbar */
+            overflow: hidden; 
             border-radius: 0.5rem; 
         }
         
@@ -26,8 +26,8 @@
             top: 0;
             left: 0;
             width: 100%;
-            /* Set height large enough to prevent the iframe itself from having a scrollbar */
-            height: 2000px; 
+            /* Iframe height matches the container height to prevent internal scrollbar */
+            height: 100%; 
             border: 0;
         }
     </style>
